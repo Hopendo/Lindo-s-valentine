@@ -1,0 +1,95 @@
+h1{  
+  font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
+  text-align:center;
+  color: #f16896;
+  font-size:32px;
+}
+
+h2{
+font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
+  text-align:center;
+  color:#ffa0d2;
+  font-size:35px;
+}
+
+.name{
+font-family:"Comic Sans MS", "Comic Sans", cursive, sans-serif;
+color:#f54291;
+text-align:center;
+justify-content:center;
+font-size:28px;
+}
+ 
+.insight{
+  color:  #c3195d;
+  text-align:center;
+  justify-content:center;
+  font-size:29px;
+  font-family:"Bookman Old Style", "Bookman", Georgia, serif;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.buttons button {
+  padding: 15px 10px;
+  font-size: 15px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  font-family: "Bookman Old Style", serif;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* YES button */
+#one {
+  background-color: #d16c8c;
+  color: white;
+}
+
+#one:hover {
+  background-color: #b85674;
+  transform: scale(1.1);
+}
+
+/* NO button */
+#two {
+  background-color: #555;
+  color: white;
+}
+
+#two:hover {
+  background-color: #333;
+  transform: scale(0.95);
+}
+
+#confetti-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.confetti {
+  position: absolute;
+  font-size: 24px;
+  animation: fall 3s linear forwards;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-20px) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
